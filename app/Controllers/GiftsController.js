@@ -6,7 +6,7 @@ import { Pop } from "../Utils/Pop.js";
 function _drawGifts() {
     let template = ''
     ProxyState.gifts.forEach(g => template += g.Template)
-    document.getElementById('').innerHTML = template
+    document.getElementById('gifts').innerHTML = template
 }
 
 
