@@ -3,10 +3,9 @@ import { giftsApi } from "./AxiosService.js";
 
 class GiftsService {
 
-    async getGifts() {
-        const res = await giftsApi.get('/gifts')
-        console.log(res.data)
-    }
+    const res = await giftsApi.put(`gifts/${ProxyState.player.id}`, ProxyState)
+    console.log('put request for gifts', res.data);
+
 }
 
 export const giftsService = new GiftsService()
