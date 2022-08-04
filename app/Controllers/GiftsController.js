@@ -13,6 +13,6 @@ function _drawGifts() {
 
 export class GiftsController {
     constructor() {
-
+        ProxyState.on('gifts', _drawGifts)
     }
 }
