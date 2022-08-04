@@ -2,12 +2,12 @@ import { ProxyState } from "../AppState.js";
 import { giftsApi } from "./AxiosService.js";
 
 class GiftsService {
-    async getGifts() {
-        const res = await giftsApi.get('api/', {
+    async getGifts(search) {
+        const res = await giftsApi.get('search', {
             params: {
                 api_key: 'd6R0Hp1EFwqfprjmf1YyCnd8aVlz2Bm9',
                 rating: 'pg',
-                q: ''
+                q: search
             }
         })
         console.log('Get gifts', res.data);
