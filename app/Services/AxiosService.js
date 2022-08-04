@@ -1,4 +1,4 @@
 export const giftsApi = new axios.create({
-    baseURL: 'http://api.giphy.com/v1/gifs', // maybe neeed this? api/random
+    baseURL: 'http://api.giphy.com/v1/gifs',
     timeout: 4000
 })
